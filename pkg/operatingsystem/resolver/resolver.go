@@ -12,7 +12,7 @@ import (
 // OperatingSystems represents the available operating systems to use and their constructors.
 var OperatingSystems = map[string]func(*docker.Client) operatingsystem.OperatingSystem{
 	amazonlinux2.Name: amazonlinux2.NewAmazonLinux2,
-	cos.Name:          cos.NewCos,
+	//cos.Name:          cos.NewCos,
 }
 
 // OperatingSystem resolves the given operatingsystem name to an implementation of operatingsystem.OperatingSystem
