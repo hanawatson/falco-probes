@@ -6,7 +6,7 @@ import (
 	"github.com/thought-machine/falco-probes/pkg/docker"
 	"github.com/thought-machine/falco-probes/pkg/operatingsystem"
 	"github.com/thought-machine/falco-probes/pkg/operatingsystem/amazonlinux2"
-	"github.com/thought-machine/falco-probes/pkg/operatingsystem/cos"
+	//"github.com/thought-machine/falco-probes/pkg/operatingsystem/cos"
 )
 
 // OperatingSystems represents the available operating systems to use and their constructors.
