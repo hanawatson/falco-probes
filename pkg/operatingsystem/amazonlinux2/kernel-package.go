@@ -11,7 +11,7 @@ import (
 
 var (
 	amazonLinux2Image      = "docker.io/library/amazonlinux:2"
-	falcoDriverLoaderImage = "docker.io/falcosecurity/falco-driver-loader:0.33.0"
+	falcoDriverLoaderImage = "docker.io/falcosecurity/falco-driver-loader:0.34.1"
 )
 
 // NewKernelPackage returns a new hydrated example implementation operatingsystem.KernelPackage.
