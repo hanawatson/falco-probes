@@ -107,11 +107,11 @@ func addKernelReleaseAndVersionAndMachine(dockerClient *docker.Client, kp *opera
 		return err
 	}
 
-	kernelRelease, err := getKernelRelease(dockerClient, kp.KernelSources, kernelSrcPath)
+	/*kernelRelease, err := getKernelRelease(dockerClient, kp.KernelSources, kernelSrcPath)
 	if err != nil {
 		return err
 	}
-	kp.KernelRelease = kernelRelease
+	kp.KernelRelease = kernelRelease*/
 
 	kernelVersion, err := getKernelVersion(dockerClient, kp.KernelSources, kernelSrcPath)
 	if err != nil {
@@ -124,6 +124,8 @@ func addKernelReleaseAndVersionAndMachine(dockerClient *docker.Client, kp *opera
 		return err
 	}
 	kp.KernelMachine = kernelMachine
+
+	kp.KernelRelease = kernelVersion + "." + kernelMachine
 
 	return nil
 }
